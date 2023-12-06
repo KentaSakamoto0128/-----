@@ -111,6 +111,11 @@ ul li:hover a {
     opacity: 0;
 }
 
+#contents1 button {
+
+    margin: 2px;
+}
+
 #contents1 a {
     display: block;
     text-align: right;
@@ -217,8 +222,8 @@ ul li:hover a {
     height: 100%;
     padding-top: 5px;
     padding-left: 10px;
-    text-align: left;
     z-index: -1;
+    text-align: left;
     transition: 0.4s;
     opacity: 0;
 }
@@ -264,8 +269,8 @@ ul li:hover a {
     opacity: 1;
 }
 
-/**canvas {
+canvas {
     margin-left: 40%;
     margin-top: 25px;
+    z-index: -10;
 }
-**/

@@ -104,7 +104,7 @@
         </ul>
     </div>
 
-    <div id="contents1">
+    <div id="contents1" class="open">
         <div class="contents-title">
             <h2>テキスト</h2>
             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
@@ -178,9 +178,29 @@
                 </svg></a>
         </div>
     </div>
+    <!--
+    <div id="canvas-container">
+        <canvas id="canvas" width="400" height="400" style="border:1px solid #888;"></canvas>
+    </div>
+    <script>
 
+        function addText() {
+            var itext = new fabric.IText('テキストボックス', {
+                left: 100,
+                top: 100,
+                fill: '#000000',
+                fontSize: 20,
+                padding: 8
+            });
+
+            canvas.add(itext);
+            canvas.setActiveObject(iText);
+            iText.fontWeight = "bold";
+            canvas.requestRenderAll();
+        }
+    </script>
+    !-->
     <script src="script.js"></script>
-
 </body>
 
 </html>
