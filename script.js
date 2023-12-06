@@ -85,3 +85,5 @@ cls5.onclick = () => {
 cls6.onclick = () => {
     nav6.classList.remove("open");
 }
+
+
