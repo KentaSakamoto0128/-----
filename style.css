@@ -1,0 +1,265 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: #878787;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 20px;
+    width: 200px;
+    height: 55px;
+    background: url(logo_IMG.png) no-repeat;
+    background-size: 200px 50px;
+    text-indent: -9999px;
+}
+
+.icon_Back {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.icon_L {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.icon_R {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+
+.header .icon_Back:hover {
+    transform: scale(1.2);
+}
+
+.header .icon_L:hover {
+    transform: scale(1.2);
+}
+
+.header .icon_R:hover {
+    transform: scale(1.2);
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    background-color: #B4B4B4;
+    width: 80px;
+    height: 100%;
+}
+
+.sidebar ul a {
+    padding: 15px;
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 0;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    transition: 0.4s;
+}
+
+ul li:hover a {
+    padding-left: 30px;
+    background-color: #d7d7d7;
+}
+
+.contents-title {
+    display: flex;
+}
+
+#contents1 {
+    position: fixed;
+    background-color: #d7d7d7;
+    top: 75px;
+    left: -200px;
+    width: 275px;
+    height: 100%;
+    padding-top: 5px;
+    padding-left: 10px;
+    text-align: left;
+    z-index: -1;
+    transition: 0.4s;
+    opacity: 0;
+}
+
+#contents1 a {
+    display: block;
+    text-align: right;
+    margin-left: auto;
+    margin-top: 3px;
+    margin-right: 10px;
+}
+
+#contents1.open {
+    left: 80px;
+    opacity: 1;
+}
+
+#contents2 {
+    position: fixed;
+    background-color: #d7d7d7;
+    top: 75px;
+    left: -200px;
+    width: 275px;
+    height: 100%;
+    padding-top: 5px;
+    padding-left: 10px;
+    text-align: left;
+    z-index: -1;
+    transition: 0.4s;
+    opacity: 0;
+}
+
+#contents2 a {
+    display: block;
+    text-align: right;
+    margin-left: auto;
+    margin-top: 3px;
+    margin-right: 10px;
+}
+
+#contents2.open {
+    left: 80px;
+    opacity: 1;
+}
+
+#contents3 {
+    position: fixed;
+    background-color: #d7d7d7;
+    top: 75px;
+    left: -200px;
+    width: 275px;
+    height: 100%;
+    padding-top: 5px;
+    padding-left: 10px;
+    text-align: left;
+    z-index: -1;
+    transition: 0.4s;
+    opacity: 0;
+}
+
+#contents3 a {
+    display: block;
+    text-align: right;
+    margin-left: auto;
+    margin-top: 3px;
+    margin-right: 10px;
+}
+
+#contents3.open {
+    left: 80px;
+    opacity: 1;
+}
+
+#contents4 {
+    position: fixed;
+    background-color: #d7d7d7;
+    top: 75px;
+    left: -200px;
+    width: 275px;
+    height: 100%;
+    padding-top: 5px;
+    padding-left: 10px;
+    text-align: left;
+    z-index: -1;
+    transition: 0.4s;
+    opacity: 0;
+}
+
+#contents4 a {
+    display: block;
+    text-align: right;
+    margin-left: auto;
+    margin-top: 3px;
+    margin-right: 10px;
+}
+
+#contents4.open {
+    left: 80px;
+    opacity: 1;
+}
+
+#contents5 {
+    position: fixed;
+    background-color: #d7d7d7;
+    top: 75px;
+    left: -200px;
+    width: 275px;
+    height: 100%;
+    padding-top: 5px;
+    padding-left: 10px;
+    text-align: left;
+    z-index: -1;
+    transition: 0.4s;
+    opacity: 0;
+}
+
+#contents5 a {
+    display: block;
+    text-align: right;
+    margin-left: auto;
+    margin-top: 3px;
+    margin-right: 10px;
+}
+
+#contents5.open {
+    left: 80px;
+    opacity: 1;
+}
+
+#contents6 {
+    position: fixed;
+    background-color: #d7d7d7;
+    top: 75px;
+    left: -200px;
+    width: 275px;
+    height: 100%;
+    padding-top: 5px;
+    padding-left: 10px;
+    text-align: left;
+    z-index: -1;
+    transition: 0.4s;
+    opacity: 0;
+}
+
+#contents6 a {
+    display: block;
+    text-align: right;
+    margin-left: auto;
+    margin-top: 3px;
+    margin-right: 10px;
+}
+
+#contents6.open {
+    left: 80px;
+    opacity: 1;
+}
