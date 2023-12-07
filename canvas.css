@@ -13,14 +13,12 @@ body {
     padding: 0;
 }
 
-.header {
+header {
     background: #878787;
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
     align-items: center;
-    transition: 0.4s;
-    z-index: 30;
 }
 
 .header-logo {
@@ -56,17 +54,22 @@ body {
     margin-right: 10px;
 }
 
-
-.header .icon_Back:hover {
+.icon_Back:hover {
     transform: scale(1.2);
 }
 
-.header .icon_L:hover {
+.icon_L:hover {
     transform: scale(1.2);
 }
 
-.header .icon_R:hover {
+.icon_R:hover {
     transform: scale(1.2);
+}
+
+.topnav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 .sidebar {
@@ -75,210 +78,42 @@ body {
     background-color: #B4B4B4;
     width: 80px;
     height: 100%;
-    z-index: 20;
 }
 
-.sidebar ul a {
+.sidebar ul button {
     padding: 15px;
     display: block;
     height: 100%;
     width: 100%;
     line-height: 0;
+    border: none;
     border-bottom: 1px solid #000;
     text-align: center;
     transition: 0.4s;
+    background-color: #B4B4B4;
 }
 
-ul li:hover a {
-    padding-left: 30px;
-    background-color: #d7d7d7;
-}
-
-.contents-title {
-    display: flex;
-}
-
-#contents1 {
+.sidenav {
     position: fixed;
+    display: none;
     background-color: #d7d7d7;
     top: 75px;
-    left: -250px;
-    width: 275px;
+    left: 80px;
+    width: 250px;
     height: 100%;
     padding-top: 5px;
     padding-left: 10px;
     text-align: left;
-    transition: 0.4s;
-    opacity: 0;
-    z-index: 10;
+    z-index: 1;
 }
 
-#contents1 button {
-
-    margin: 2px;
-}
-
-#contents1 a {
+#canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin: auto;
     display: block;
-    text-align: right;
-    margin-left: auto;
-    margin-top: 3px;
-    margin-right: 10px;
 }
 
-#contents1.open {
-    left: 80px;
-    opacity: 1;
-}
-
-#contents2 {
-    position: fixed;
-    background-color: #d7d7d7;
-    top: 75px;
-    left: -250px;
-    width: 275px;
-    height: 100%;
-    padding-top: 5px;
-    padding-left: 10px;
-    text-align: left;
-    z-index: -1;
-    transition: 0.4s;
-    opacity: 0;
-    z-index: 10;
-}
-
-#contents2 a {
-    display: block;
-    text-align: right;
-    margin-left: auto;
-    margin-top: 3px;
-    margin-right: 10px;
-}
-
-#contents2.open {
-    left: 80px;
-    opacity: 1;
-}
-
-#contents3 {
-    position: fixed;
-    background-color: #d7d7d7;
-    top: 75px;
-    left: -250px;
-    width: 275px;
-    height: 100%;
-    padding-top: 5px;
-    padding-left: 10px;
-    text-align: left;
-    z-index: -1;
-    transition: 0.4s;
-    opacity: 0;
-    z-index: 10;
-}
-
-#contents3 a {
-    display: block;
-    text-align: right;
-    margin-left: auto;
-    margin-top: 3px;
-    margin-right: 10px;
-}
-
-#contents3.open {
-    left: 80px;
-    opacity: 1;
-}
-
-#contents4 {
-    position: fixed;
-    background-color: #d7d7d7;
-    top: 75px;
-    left: -250px;
-    width: 275px;
-    height: 100%;
-    padding-top: 5px;
-    padding-left: 10px;
-    text-align: left;
-    z-index: -1;
-    transition: 0.4s;
-    opacity: 0;
-    z-index: 10;
-}
-
-#contents4 a {
-    display: block;
-    text-align: right;
-    margin-left: auto;
-    margin-top: 3px;
-    margin-right: 10px;
-}
-
-#contents4.open {
-    left: 80px;
-    opacity: 1;
-}
-
-#contents5 {
-    position: fixed;
-    background-color: #d7d7d7;
-    top: 75px;
-    left: -250px;
-    width: 275px;
-    height: 100%;
-    padding-top: 5px;
-    padding-left: 10px;
-    z-index: -1;
-    text-align: left;
-    transition: 0.4s;
-    opacity: 0;
-    z-index: 10;
-}
-
-#contents5 a {
-    display: block;
-    text-align: right;
-    margin-left: auto;
-    margin-top: 3px;
-    margin-right: 10px;
-}
-
-#contents5.open {
-    left: 80px;
-    opacity: 1;
-}
-
-#contents6 {
-    position: fixed;
-    background-color: #d7d7d7;
-    top: 75px;
-    left: -250px;
-    width: 275px;
-    height: 100%;
-    padding-top: 5px;
-    padding-left: 10px;
-    text-align: left;
-    z-index: -1;
-    transition: 0.4s;
-    opacity: 0;
-    z-index: 10;
-}
-
-#contents6 a {
-    display: block;
-    text-align: right;
-    margin-left: auto;
-    margin-top: 3px;
-    margin-right: 10px;
-}
-
-#contents6.open {
-    left: 80px;
-    opacity: 1;
-}
-
-canvas {
-    margin-left: 400px;
-    margin-right: ;
-    margin-top: 25px;
-    z-index: -10;
+.canvas-container {
+    margin-left: 80px;
 }
