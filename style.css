@@ -20,6 +20,7 @@ body {
     display: flex;
     align-items: center;
     transition: 0.4s;
+    z-index: 30;
 }
 
 .header-logo {
@@ -74,6 +75,7 @@ body {
     background-color: #B4B4B4;
     width: 80px;
     height: 100%;
+    z-index: 20;
 }
 
 .sidebar ul a {
@@ -100,15 +102,15 @@ ul li:hover a {
     position: fixed;
     background-color: #d7d7d7;
     top: 75px;
-    left: -200px;
+    left: -250px;
     width: 275px;
     height: 100%;
     padding-top: 5px;
     padding-left: 10px;
     text-align: left;
-    z-index: -1;
     transition: 0.4s;
     opacity: 0;
+    z-index: 10;
 }
 
 #contents1 button {
@@ -133,7 +135,7 @@ ul li:hover a {
     position: fixed;
     background-color: #d7d7d7;
     top: 75px;
-    left: -200px;
+    left: -250px;
     width: 275px;
     height: 100%;
     padding-top: 5px;
@@ -142,6 +144,7 @@ ul li:hover a {
     z-index: -1;
     transition: 0.4s;
     opacity: 0;
+    z-index: 10;
 }
 
 #contents2 a {
@@ -161,7 +164,7 @@ ul li:hover a {
     position: fixed;
     background-color: #d7d7d7;
     top: 75px;
-    left: -200px;
+    left: -250px;
     width: 275px;
     height: 100%;
     padding-top: 5px;
@@ -170,6 +173,7 @@ ul li:hover a {
     z-index: -1;
     transition: 0.4s;
     opacity: 0;
+    z-index: 10;
 }
 
 #contents3 a {
@@ -189,7 +193,7 @@ ul li:hover a {
     position: fixed;
     background-color: #d7d7d7;
     top: 75px;
-    left: -200px;
+    left: -250px;
     width: 275px;
     height: 100%;
     padding-top: 5px;
@@ -198,6 +202,7 @@ ul li:hover a {
     z-index: -1;
     transition: 0.4s;
     opacity: 0;
+    z-index: 10;
 }
 
 #contents4 a {
@@ -217,7 +222,7 @@ ul li:hover a {
     position: fixed;
     background-color: #d7d7d7;
     top: 75px;
-    left: -200px;
+    left: -250px;
     width: 275px;
     height: 100%;
     padding-top: 5px;
@@ -226,6 +231,7 @@ ul li:hover a {
     text-align: left;
     transition: 0.4s;
     opacity: 0;
+    z-index: 10;
 }
 
 #contents5 a {
@@ -245,7 +251,7 @@ ul li:hover a {
     position: fixed;
     background-color: #d7d7d7;
     top: 75px;
-    left: -200px;
+    left: -250px;
     width: 275px;
     height: 100%;
     padding-top: 5px;
@@ -254,6 +260,7 @@ ul li:hover a {
     z-index: -1;
     transition: 0.4s;
     opacity: 0;
+    z-index: 10;
 }
 
 #contents6 a {
@@ -270,7 +277,8 @@ ul li:hover a {
 }
 
 canvas {
-    margin-left: 40%;
+    margin-left: 400px;
+    margin-right: ;
     margin-top: 25px;
     z-index: -10;
 }

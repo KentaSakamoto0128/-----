@@ -103,8 +103,7 @@
             </li>
         </ul>
     </div>
-
-    <div id="contents1" class="open">
+    <div id="contents1" class="">
         <div class="contents-title">
             <h2>テキスト</h2>
             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
@@ -178,11 +177,15 @@
                 </svg></a>
         </div>
     </div>
-    <!--
     <div id="canvas-container">
         <canvas id="canvas" width="400" height="400" style="border:1px solid #888;"></canvas>
     </div>
     <script>
+        var canvas = this.__canvas = new fabric.Canvas('canvas');
+
+        fabric.Object.prototype.transparentCorners = false;
+        fabric.Object.prototype.cornerColor = 'blue';
+        fabric.Object.prototype.cornerStyle = 'circle';
 
         function addText() {
             var itext = new fabric.IText('テキストボックス', {
@@ -198,8 +201,17 @@
             iText.fontWeight = "bold";
             canvas.requestRenderAll();
         }
+
+        var sel = function (id) { return document.getElementById(id) };
+        var obj = iText;
+
+        addHandler('bold', function (obj) {
+            var isBold = getStyle(obj, 'fontWeight') === 'bold';
+            setStyle(obj, 'fontWeight', isBold ? '' : 'bold');
+            obj.dirty = true;
+        });
+
     </script>
-    !-->
     <script src="script.js"></script>
 </body>
 
