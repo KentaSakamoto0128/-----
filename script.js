@@ -251,6 +251,8 @@ function autoCard() {
     }
 }
 
+
+
 function reSize() {
     document.getElementById("Height").value;
     document.getElementById("Width").value;
@@ -265,7 +267,15 @@ function reSize() {
     canvas2.width = parseInt(document.getElementById("Width").value);
     canvas2.style.height = parseInt(document.getElementById("Height").value) + "px";
     canvas2.style.width = parseInt(document.getElementById("Width").value) + "px";
+
+    let canvas3 = document.querySelector('.canvas-container');
+    canvas3.height = parseInt(document.getElementById("Height").value);
+    canvas3.width = parseInt(document.getElementById("Width").value);
+    canvas3.style.height = parseInt(document.getElementById("Height").value) + "px";
+    canvas3.style.width = parseInt(document.getElementById("Width").value) + "px";
 }
+
+function zoomchange() { }
 
 function updateSetting(key, value) {
     if (!image) return; //画像がない場合リターン
