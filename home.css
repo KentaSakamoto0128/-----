@@ -6,6 +6,40 @@ body {
     background-color: #878787;
 }
 
+.selectbox-detail {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+
+.selectbox-detail::after {
+    position: absolute;
+    right: 15px;
+    width: 10px;
+    height: 7px;
+    background-color: #fff;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    content: '';
+    pointer-events: none;
+}
+
+.selectbox-detail select {
+    appearance: none;
+    min-width: 100px;
+    height: 2.8em;
+    padding: .4em calc(.8em + 30px) .4em .8em;
+    border: none;
+    border-bottom: 3px solid #000000;
+    background-color: #878787;
+    color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.selectbox-detail select:focus {
+    outline: none;
+}
+
 button {
     background-color: #878787;
     border: none;
@@ -81,36 +115,47 @@ ul li button:hover:before {
     width: 87%;
 }
 
-small {
-    position: absolute;
-    bottom: 15px;
-    right: 10px;
 
-}
 
 .linenavi {
     padding-left: 0px;
     position: absolute;
-    bottom: 10px;
-    width: 0px;
+    bottom: 50px;
+    width: 400px;
+    left: -300px;
+    transition: 0.5s;
+    background-color: #fff;
+    border-radius: 5px;
 }
 
-svg.lineicon {
+#naviimg {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    justify-content: right;
+}
+
+img.lineicon {
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 img.lineQR {
-    position: relative;
-    opacity: 0;
     border-radius: 5px;
-    transition: 0.5s;
-    left: -300px;
 }
 
+.linenavi:hover {
+    left: -50px;
+}
 
-.linenavi:hover .lineQR {
-    opacity: 1;
-    left: 10px;
+.linenavi:hover #arrow {
+    transform: scale(-1, 1);
+}
+
+small {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
 }
 
 @media (max-width: 1000px) {
