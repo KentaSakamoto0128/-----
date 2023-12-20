@@ -120,6 +120,22 @@ button:hover {
     cursor: pointer;
 }
 
+input[type='submit'] {
+    font-weight: bold;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    border: none;
+    color: #000;
+    background-color: #d7d7d7;
+    transition: 0.3s;
+}
+
+input[type='submit']:hover {
+    color: #878787;
+    cursor: pointer;
+}
+
 p {
     color: #fff;
 }
