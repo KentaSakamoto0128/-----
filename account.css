@@ -20,9 +20,20 @@ body {
     text-indent: -9999px;
 }
 
+div#alert p {
+    color: red;
+    margin: 0;
+    margin-top: 15px;
+}
+
 h2 {
     color: #fff;
     margin-top: 0;
+    margin-bottom: 0;
+}
+
+h3#subtitle {
+    margin-top: 20px;
 }
 
 h3 {
@@ -136,7 +147,7 @@ input[type='submit']:hover {
     cursor: pointer;
 }
 
-p {
+p#login {
     color: #fff;
 }
 
